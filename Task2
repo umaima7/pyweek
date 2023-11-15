@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+df=pd.read_excel("880D_mart_data.xlsx")
+df.head()
+df.shape
+df.dtypes
+df.isnull().sum()
+df.sample(10)
+df.columns
+df.info()
+df.hist(figsize=(10,20))
+plt.show()
+sns.distplot(df["SALES AMOUNT"])
+sns.distplot(df["SALE PRICE"])
